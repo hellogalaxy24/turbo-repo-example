@@ -2,7 +2,7 @@
   "name": "turbo-repo-example",
   "private": true,
   "scripts": {
-    "build": "turbo build",
+    "build": "turbo build --filter='./apps/docs'",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
