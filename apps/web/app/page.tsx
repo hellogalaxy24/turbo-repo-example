@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
-
+import image from "./../../../shared/images/vercel.svg"
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -16,7 +16,7 @@ export default function Home() {
         />
         <ol>
           <li>
-           This should not work!!!! <code>app/page.tsx</code>
+           This should not work!!!!????!!!!!!!! <code>app/page.tsx</code>
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
@@ -30,11 +30,12 @@ export default function Home() {
           >
             <Image
               className={styles.logo}
-              src="/vercel.svg"
+              src={image}
               alt="Vercel logomark"
               width={20}
               height={20}
             />
+            <img src={image.src}/>
             Deploy now
           </a>
           <a
